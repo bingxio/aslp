@@ -9,12 +9,10 @@ import (
 const (
 	Stdout = iota
 	File
-	All
+	Both
 )
 
-var (
-	ModeStringer = []string{"STDOUT", "FILE", "ALL"}
-)
+var ModeStringer = []string{"STDOUT", "FILE", "BOTH"}
 
 type Config struct {
 	Mode int
@@ -86,7 +84,7 @@ func (c Config) Dissemble() {
 }`, ModeStringer[c.Mode], encs)
 	}
 
-	if c.Mode == File || c.Mode == All {
+	if c.Mode == File || c.Mode == Both {
 		dis = fmt.Sprintf(`ASLP CONFIG -> {
   mode: %s
   encoder: [%s]

@@ -2,9 +2,9 @@ package main
 
 func main() {
 	conf := NewConfig(
-		All,
+		Both,
 		Encoder{
-			T: "@{2006/01/02 15:04:05} [T] @N - @M.",
+			T: "@{2006/01/02 15:04:05} [T]: @N - @M.",
 			D: "[DEBUG] @N - @M.",
 		},
 	)
@@ -20,5 +20,12 @@ func main() {
 
 	conf.Dissemble()
 
-	l.W("WHAT", "qweowqjeopw")
+	l.T("WHAT", "lfmgl;fdgopw")
+	l.T("WHAT", "*&$*(@#$wqjeopw")
+	l.T("WHAT", "13123213qweowqjeopw")
+	l.T("WHAT", "58768eopw")
+	l.T("WHAT", "vngheteeopw")
+	l.T("WHAT", "sdfweowqjeopw")
+	l.T("WHAT", "sgfdw")
+	l.T("WHAT", "657635435")
 }
