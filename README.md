@@ -1,4 +1,5 @@
-![](./art.png)
+<img src="assets/art.png" width=400>
+
 # ASLP
 A Go language based log library, simple, convenient and concise.
 - Three modes, standard output, file mode and common mode.
@@ -16,6 +17,7 @@ conf := NewConfig(
                 E: "@{15:04:05} [ERROR](@N): @M",
         },
 )
+conf.Dissemble()
 ```
 You only need to fill stdout for output, file for file mode, and both for both mode.
 For file mode or both mode, you need to specify the detailed configuration of log files.
@@ -49,6 +51,13 @@ Customize the log format in the configuration structure. Currently, three variab
 ## Install
 ## Donate
 Thank you for your charity, my meal money, support for Alipay and WeChat.
+
+
+<div style="float: left">
+        <img src="assets/donate-alipay.png" width=200>
+        <img src="assets/donate-wechat.png" width=200>
+</div>
+
 ## License
 ```
 // Copyright 2021 bingxio. All rights reserved.
