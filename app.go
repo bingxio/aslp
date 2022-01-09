@@ -5,7 +5,7 @@ func main() {
 		Both,
 		Encoder{
 			T: "@{2006/01/02 15:04:05} [T]: @N - @M.",
-			D: "[DEBUG] @N - @M.",
+			D: "@{2006-01-02} [DEBUG] @N - @M.",
 		},
 	)
 
@@ -21,11 +21,11 @@ func main() {
 	conf.Dissemble()
 
 	l.T("WHAT", "lfmgl;fdgopw")
-	l.T("WHAT", "*&$*(@#$wqjeopw")
+	l.D("WHAT", "*&$*(@#$wqjeopw")
 	l.T("WHAT", "13123213qweowqjeopw")
-	l.T("WHAT", "58768eopw")
+	l.D("WHAT", "58768eopw")
 	l.T("WHAT", "vngheteeopw")
-	l.T("WHAT", "sdfweowqjeopw")
+	l.D("WHAT", "sdfweowqjeopw")
 	l.T("WHAT", "sgfdw")
 	l.T("WHAT", "657635435")
 }
